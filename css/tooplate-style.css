@@ -283,6 +283,7 @@ b, strong {
 
 .carousel-inner{
   border-radius: 50px;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 40%);
 }
 
 #no-dark-mode{

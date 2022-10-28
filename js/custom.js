@@ -26,6 +26,6 @@
     $('.social-links a').tooltip();
 
 
-    $('.copyright-text').text(`Copyright &copy; ${new Date().getFullYear()}. All rights reserved.`);
+    $('.copyright-text').text(`Copyright \xA9 ${new Date().getFullYear()}. All rights reserved.`);
 
 })(jQuery);
