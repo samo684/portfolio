@@ -10,7 +10,7 @@ body {
 }
 
 .small-text {
-  color: #5b5b5b;
+  color: #20365B;
   font-size: 14px;
   font-weight: bold;
   padding: 8px 16px;
@@ -43,7 +43,7 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
-  color: #5b5b5b;
+  color: #20365B;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,7 +74,7 @@ b, strong {
 
 .custom-btn {
   background: #eee;
-  color: #5b5b5b;
+  color: #20365B;
   font-weight: bold;
   border-radius: 50px;
   padding: 13px 29px;
@@ -87,7 +87,7 @@ b, strong {
   color: #ffc200;
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
+  background: #20365B;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
@@ -266,6 +266,7 @@ b, strong {
   position: relative;
   right: 6px;
 }
+
 .color-mode-icon:after {
   font-family: 'unicons';
   content: '\ea9f';
@@ -280,9 +281,22 @@ b, strong {
   color: #ffffff;
 }
 
+.carousel-inner{
+  border-radius: 50px;
+}
+
+#no-dark-mode{
+  color: #000000;
+}
+
 .dark-mode {
   background: #0c0c0d;
 }
+
+.dark-mode .navbar-toggler-icon{
+  background: #ffffff;
+}
+
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -294,8 +308,10 @@ b, strong {
   border-bottom: 1px solid #1f1f1f;
 }
 .dark-mode .small-text {
-  background: #0d0c15;
   color: #ffffff;
+}
+.dark-mode p {
+  color: #c3c3c3;
 }
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
@@ -318,7 +334,7 @@ b, strong {
 }
 .timeline-wrapper:before {
   content: "";
-  background: #474559;
+  background: #20365B;
   width: 3px;
   height: 100%;
   position: absolute;
@@ -326,7 +342,7 @@ b, strong {
 }
 
 .timeline-yr {
-  background: #474559;
+  background: #20365B;
   border-radius: 100%;
   position: absolute;
   width: 75px;
@@ -349,7 +365,7 @@ b, strong {
   margin-left: 6em;
 }
 .timeline-info small {
-  color: #474559;
+  color: #ffc200;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
@@ -399,12 +415,12 @@ b, strong {
   height: 8px;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #5b5b5b;
+  background: #a1a1a1;
 }
 
 .contact {
 
-  background-color: #2E2630;
+  background-color: #000000;
 
 }
 
@@ -427,21 +443,20 @@ b, strong {
 .contact .contact-div p {
   font-size: 19px;
   padding-top: 20px;
+  color: #20365B;
 }
 
 .contact .contact-div p span {
-  color: #ffc200;
+  color: #20365B;
   font-weight: 700;
 }
 
 .contact .contact-div .email {
-  color: #ffc200;
+  color: #20365B;
   padding-bottom: 2px;
   padding-top: 10px;
-  border-bottom-style: dotted;
   width: 255px;
   margin: 0 auto;
-  border-bottom-color: #ffc200;
   cursor: pointer;
   font-size: 25px;
 }
@@ -475,10 +490,6 @@ b, strong {
     padding-bottom: 4rem;
   }
 
-  .color-mode {
-    display: none;
-  }
-
   .about-image {
     margin-top: 4em;
   }
@@ -506,7 +517,6 @@ b, strong {
   }
 
   .navbar-collapse {
-    background: #ffffff;
     text-align: center;
     padding-bottom: 20px;
   }
@@ -516,6 +526,11 @@ b, strong {
   }
 }
 @media (max-width: 580px) {
+
+  .color-mode-icon {
+    display: none;
+  }
+  
 	.animated-info {
 		min-width: 300px;
 	}
